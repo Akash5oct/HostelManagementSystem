@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>Sign Up Form</title>
+ <style>
+body {
+font-family: sans-serif;}
+form {
+ max-width: 480px;
+margin: 10px auto;
+padding: 10px 20px;
+background: #f4f7f8;
+border-radius: 8px;
+}
+h1 {
+margin: 0 0 30px 0;
+text-align: center;
+}
+input[type="text"],
+input[type="password"],select {
+ background: rgba(255,255,255,0.1);
+ border: none;
+font-size: 16px;
+height: auto;
+margin: 0;
+outline: 0;
+padding: 15px;
+width: 100%;
+background-color: #e8eeef;
+color: #8a97a0;
+ box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+margin-bottom: 30px;
+}
+textarea{
+background-color: #e8eeef;
+width: 100%;
+
+}
+input[type="radio"]{
+margin: 0 4px 8px 0;
+}
+select {
+padding: 6px;
+height: 32px;
+border-radius: 2px;
+}
+fieldset {
+margin-bottom: 30px;
+ border: none;
+}
+legend {
+font-size: 1.4em;
+margin-bottom: 10px;
+}
+label {
+display: block;
+margin-bottom: 8px;
+}
+#btn{
+padding: 19px 39px 18px 39px;
+color: #FFF;
+ background-color: #4bc970;
+font-size: 18px;
+text-align: center;
+font-style: normal;
+border-radius: 5px;
+width: 40%;
+border: 1px solid #3ac162;
+ border-width: 1px 1px 3px;
+}
+ </style>
+ </head>
+<body>
+
+<form action="userRegister" method="post">
+
+ <h1>Sign Up</h1>
+
+<fieldset>
+<legend>Your basic info</legend>
+ <label> First Name:</label>
+<input type="text" name="fn">
+
+<label> Last Name:</label>
+ <input type="text" name="ln">
+ <label> Aadhar No:</label>
+<input type="text" name="adhar">
+<label>Gender:</label>
+ <input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<label>Email:</label>
+ <input type="text" name="em">
+<label> Address:</label>
+<textarea rows="4" cols="50" name="add" ></textarea>
+<label> City:</label>
+<input type="text"  name="cst">
+<label> State:</label>
+<select name="st">
+<option>UP</option>
+<option>MP</option>
+<option>MAHARASTRA</option>
+<option>DELHI</option>
+</select>
+<label> User Name:</label>
+ <input type="text" name="un">
+ <label>Password:</label>
+<input type="password" name="pw">
+<label> Security Question:</label>
+<select name="sec">
+<option>Your pet name?</option>
+<option>Your Favorite Teacher Name?</option>
+<option>Your Favorite Book Name?</option>
+<option>Your Best Friend Name?</option>
+ </select>
+<label> Answer:</label>
+<input type="text" name="ans">
+ <label> Mobile No:</label>
+<input type="text" name="mob">
+</fieldset>
+ <input id="btn" type="submit" value="Sign up" name="reg">
+ <input id="btn" type="reset" value="Clear">
+</form>
+<a href='hostelHome.html'>Go to Home Page</a>
+ </body>
+</html>

@@ -1,0 +1,7 @@
+.thumbnail {
+height:400px;	
+width:600px;
+}
+.caption{font-weight:bold;text-align:center;}
+#changecolor{background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */}
